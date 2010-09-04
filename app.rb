@@ -3,14 +3,16 @@ require 'sinatra'
 require 'haml'
 require 'maruku'
 
-before do
-  if request.host != 'www.greeninggodalming.org.uk'
-    redirect "http://www.greeninggodalming.org.uk"+request.fullpath, 301
-  end
-end
-
 get '/' do
   haml :index
+end
+
+get '/challenges' do
+  haml :challenges
+end
+
+get '/previous_events' do
+  haml :previous_events
 end
 
 get '/stylesheets/main.css' do

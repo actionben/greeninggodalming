@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %meta{:charset => "UTF-8"}
+    %title Greening Godalming
+    %link{:rel => "stylesheet", :href => "stylesheets/main.css"}
+  %body
+    .wrapper
+      %a{:href => "/"}
+        %h1.site_title
+          %span.text Greening Godalming
+      %ul.main_menu
+        %li.first Home
+        %li
+          %a{:href => "/challenges"} Godalming Carbon Challenge
+        %li
+          %a{:href => "/previous_events"} Previous events
+      = yield
+      .footer
+        :maruku
+          If you would like to know more or get involved please call *07708 865 340* or *07765 481 100*  
+          or email <mailto:greening.godalming@gmail.com>
