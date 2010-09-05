@@ -20,6 +20,10 @@ get '/stylesheets/main.css' do
   sass :'stylesheets/main'
 end
 
+get '/wp-content/uploads/2010/04/challenge_card.pdf' do
+  redirect "/challenge_card.pdf", 301
+end
+
 get '*.*' do
   redirect "#{params[:splat].first}", 301
 end
