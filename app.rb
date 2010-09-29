@@ -15,6 +15,10 @@ get '/previous_events' do
   haml :previous_events
 end
 
+get '/free-home-owners-and-small-business-renewables-workshop' do
+  haml :fhoasbr_workshop
+end
+
 get '/stylesheets/main.css' do
   content_type 'text/css', :charset => 'utf-8'
   sass :'stylesheets/main'
